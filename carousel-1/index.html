@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel 1</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- Slider main container -->
+    <div class="card">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="1.svg" />
+            <h2>Create Account</h2>
+            <h3>Tell us who you are</h3>
+            <input type="text" placeholder="Your name" />
+          </div>
+          <div class="swiper-slide">
+            <div className="image-wrapper">
+              <img src="2.svg" />
+            </div>
+            <h2>Security Info</h2>
+            <h3>Enter a strong password</h3>
+            <input type="password" placeholder="Your password" />
+          </div>
+          <div class="swiper-slide">
+            <div className="image-wrapper">
+              <img src="3.svg" />
+            </div>
+            <h2>Get Started</h2>
+            <h3>You're all set and ready</h3>
+            <button>Let's Go</button>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

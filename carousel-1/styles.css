@@ -1,0 +1,98 @@
+html,
+body {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background: #3b395c;
+  font-family: "Euclid Circular A";
+  text-align: center;
+}
+
+.card {
+  width: 360px;
+  padding: 0;
+  border-radius: 10px;
+  background: #27263c;
+  box-shadow: 0px -6.8px 9.8px rgba(0, 0, 0, 0.003),
+    0px -10.8px 23.5px rgba(0, 0, 0, 0.008),
+    0px -10.3px 44.3px rgba(0, 0, 0, 0.016),
+    0px -1.5px 79.1px rgba(0, 0, 0, 0.026),
+    0px 28.5px 147.9px rgba(0, 0, 0, 0.042), 0px 174px 354px rgba(0, 0, 0, 0.07);
+}
+
+h2 {
+  color: #f9f9f9;
+  margin: 0 0 6px;
+  font-weight: 500;
+}
+
+h3 {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0 0 24px;
+  font-weight: 400;
+  font-size: 14px;
+  align-self: stretch;
+}
+
+input,
+button {
+  display: block;
+  width: 240px;
+  height: 48px;
+  margin: 0 70px;
+  border-radius: 24px;
+  font-size: 16px;
+  font-family: inherit;
+  outline-color: #3181f8;
+  text-align: center;
+}
+
+input {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  padding: 12px;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+button {
+  background: #864dfb;
+  color: #f9f9f9;
+  border: 0;
+  cursor: pointer;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0 130px;
+}
+
+.swiper .swiper-pagination .swiper-pagination-bullet {
+  box-shadow: none;
+  background: #864dfb;
+  width: 16px;
+  height: 16px;
+}
+
+.swiper-horizontal .swiper-pagination-bullets.swiper-pagination-horizontal {
+  top: auto;
+  bottom: 56px;
+}
+
+.swiper-slide img {
+  height: 170px;
+  margin-bottom: 10px;
+}
