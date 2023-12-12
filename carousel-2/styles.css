@@ -6,6 +6,15 @@
 }
 
 body {
+}
+
+section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 0 50px;
+  min-height: 100vh;
   background: #16222a; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -17,17 +26,61 @@ body {
     #3a6073,
     #16222a
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #f9f9f9;
 }
 
-section {
-  position: relative;
+.content {
   display: flex;
   align-items: center;
-  gap: 50px;
-  padding: 0 50px;
-  min-height: 100vh;
-  max-width: 90vw;
-  margin: 0 auto;
+  gap: 60px;
+  padding: 0 100px;
+}
+
+nav {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  background: #ffffff;
+  padding: 0 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav img {
+  height: 80%;
+}
+
+nav a {
+  margin-left: 30px;
+}
+
+.carousel {
+  width: 600px;
+}
+
+h2 {
+  font-weight: 500;
+  margin: 0 0 16px;
+}
+
+p {
+  opacity: 0.7;
+  font-size: 18px;
+  margin: 0 0 20px;
+}
+
+button {
+  border: 0;
+  background: #f9f9f9;
+  color: #16222a;
+  font-family: inherit;
+  padding: 10px 20px;
+  border-radius: 60px;
+  font-size: 18px;
 }
 
 section a {
@@ -59,7 +112,7 @@ section a {
 }
 
 .swiper-slide {
-  height: 500px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: end;
